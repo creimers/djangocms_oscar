@@ -15,6 +15,6 @@ class OscarApp(CMSApp):
     urls = [
         patterns('', *application.urls[0])
     ]
-    app_name = "oscar"
+    exclude_permissions = ['dashboard']
 
 apphook_pool.register(OscarApp)

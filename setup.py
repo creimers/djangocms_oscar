@@ -3,13 +3,13 @@ try:
 except ImportError:
     from distutils.core import setup
 
-import djangocms-oscar
+import djangocms_oscar
 
-version = djangocms-oscar.__version__
+version = djangocms_oscar.__version__
 
 setup(
-    name = 'djangocms-oscar',
-    packages = ['djangocms-oscar'],
+    name = 'djangocms_oscar',
+    packages = ['djangocms_oscar'],
     include_package_data = True,
     version = version,
     description = 'djangocms oscar integration',

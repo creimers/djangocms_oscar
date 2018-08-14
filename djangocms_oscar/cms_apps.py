@@ -12,7 +12,7 @@ class OscarApp(CMSApp):
     """
     name = _("Oscar")
     urls = [
-        *application.urls[0]
+        application.urls[0]
     ]
     exclude_permissions = ['dashboard']
 

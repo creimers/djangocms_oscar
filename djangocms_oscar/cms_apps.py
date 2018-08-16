@@ -11,10 +11,10 @@ class OscarApp(CMSApp):
     e.g at "/shop/"
     """
     name = _("Oscar")
-    urls = [
-        application.urls[0]
-    ]
     exclude_permissions = ['dashboard']
+    
+    def get_urls(self, *args, **kwargs):
+        return [application.urls[0]]
 
 
 apphook_pool.register(OscarApp)
